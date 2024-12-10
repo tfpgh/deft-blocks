@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😇</text></svg>"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEFT Blocks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="lato-800">😇 DEFT Blocks</h1>
+    <div class="body">
+      <div class="column lato-500" id="form-div">
+        <form id="form">
+          <div class="input-div" style="margin-top: 0">
+            <label for="block-type">Block Type</label>
+            <select name="block-type" id="block-type">
+              <option value="STANDARD">Standard</option>
+              <option value="MITIGATE">Mitigate</option>
+              <option value="DELINK">Delink</option>
+              <option value="NUQ">Non-Unique</option>
+              <option value="PREREQ">Prerequisite</option>
+              <option value="TURN">Turn</option>
+            </select>
+          </div>
+          <div class="input-div">
+            <label for="block-title">Block Title</label>
+            <input
+              type="text"
+              id="block-title"
+              name="block-title"
+              placeholder="The US doesn't provide direct military support to Taiwan"
+              required
+            />
+          </div>
+          <div class="input-div">
+            <label for="title">Article Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="U.S. Military Support for Taiwan in Five Charts"
+              required
+            />
+          </div>
+          <div class="input-div">
+            <label for="date">Date Published</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="input-div">
+            <label for="author-last">Author Last Name(s)</label>
+            <input
+              type="text"
+              id="author-last"
+              name="author-last"
+              placeholder="Merrow"
+              required
+            />
+          </div>
+          <div class="input-div">
+            <label for="credentials">Author Credentials (full sentences)</label>
+            <input
+              type="text"
+              id="credentials"
+              name="credentials"
+              placeholder="Will Merrow is an Associate Director at the Council on Foreign Relations"
+              required
+            />
+          </div>
+          <div class="input-div">
+            <label for="link">Article Link</label>
+            <input
+              type="text"
+              id="link"
+              name="link"
+              placeholder="https://example.com"
+              required
+            />
+          </div>
+          <div class="input-div">
+            <label for="block-creator">Your First Name</label>
+            <input
+              type="text"
+              id="block-creator"
+              name="block-creator"
+              placeholder="Teddy"
+              required
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="column" id="result-div"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
