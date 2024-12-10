@@ -27,6 +27,7 @@ h1 {
   text-align: center;
   font-size: 65px;
   margin: 25px 0 0;
+  color: #001f3f;
 }
 
 .body {
@@ -38,18 +39,19 @@ h1 {
 .column {
   flex: 50%;
   margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 20px;
 }
 
 #form-div {
-  background-color: #cccccc;
-  box-shadow: 2px 3px 24px 1px #cccccc;
+  background-color: #d0e4f7;
+  box-shadow: 2px 3px 24px 1px #d0e4f7;
+  color: #001f3f;
 }
 
 .input-div {
   padding: 0;
-  margin: 7px 0;
+  margin: 9px 0;
 }
 
 label {
@@ -62,7 +64,7 @@ input {
   font-size: 16px;
   margin-top: 3px;
   padding: 6px;
-  border: 1px solid #000;
+  border: 1px solid #001f3f;
   border-radius: 5px;
 }
 
@@ -70,10 +72,33 @@ select {
   margin-top: 3px;
   width: 100%;
   padding: 6px;
-  border: 1px solid #000;
+  border: 1px solid #001f3f;
   border-radius: 5px;
 }
 
 option {
   font-size: 16px;
+}
+
+button {
+  background-color: #002952;
+  border-radius: 20px;
+  border: 1px solid #001f3f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 11px 18px;
+  width: 100%;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #001f3f;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
 }

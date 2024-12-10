@@ -33,7 +33,7 @@ export function processSubmit(e) {
 
   resultsDiv.innerHTML = generateBlock(
     formData.get("block-type"),
-    formData.get("block-name"),
+    formData.get("block-title"),
     formData.get("author-last"),
     new Date(
       Date.parse(formData.get("date")) +
